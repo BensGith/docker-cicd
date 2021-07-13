@@ -10,7 +10,7 @@ job('NodeJS example') { // Job NAME
     }
     steps { // what steps to take 
         dockerBuildAndPublish {
-            repositoryName(benmali94/ex2)
+            repositoryName('benmali94/ex2')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
             forcePull(false)

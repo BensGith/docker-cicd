@@ -17,8 +17,10 @@ job('NodeJS example') { // Job NAME
             forceTag(false)
             createFingerprints(false)
             skipDecorate()
+            buildContext('./app')
 
 
     }
+}
 }
 

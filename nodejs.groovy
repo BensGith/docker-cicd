@@ -1,6 +1,6 @@
 job('NodeJS example') { // Job NAME
     scm { // Configure Source control management 
-        git('git://github.com/bensgith/docker-cicd.git') {  node -> // is hudson.plugins.git.GitSCM
+        git('git://github.com/bensgith/docker-cicd.git','advanced') {  node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DSL User')
             node / gitConfigEmail('bensgith@github.com')
         }

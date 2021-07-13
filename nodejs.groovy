@@ -13,6 +13,7 @@ job('NodeJS example') { // Job NAME
             repositoryName('benmali94/ex2')
             tag('${GIT_REVISION,length=9}')
             registryCredentials('dockerhub')
+	    buildContext('./app')
             forcePull(false)
             forceTag(false)
             createFingerprints(false)
